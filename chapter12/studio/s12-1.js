@@ -92,11 +92,11 @@ let animals = [candidateA,candidateB,candidateC,candidateD,candidateE,candidateF
 
 // Code your template literal and console.log statements:
 
-function name(n){
+function buildCrew(chosenID, candidates){
+  newCrew = []
   for (i=0; i< chosenID.length; i ++){
-    let cadetName = [];
-    if (animals.includes(chosenID)){
-      
+    for(j = 0; j<candidates.length; j ++){
+      if (candidates[j])
     }
   }
 }
