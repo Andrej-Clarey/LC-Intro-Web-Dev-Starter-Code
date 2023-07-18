@@ -11,7 +11,7 @@ function divide(x,y){
     if(y === 0){
         throw Error("Attempted to divide by zero.");
     }
-    return x/y
+    return x/y;
 }
 
 console.log(divide(8,9));
