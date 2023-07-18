@@ -1,12 +1,48 @@
-// 12.8.1. Select the Crew
-
 // Code your selectRandomEntry function here:
 
+function selectRandomEntry(arr){
+  let index = Math.floor(Math.random()*arr.length);
+  // console.log(index);
+  return arr[index];
+}
 
 // Code your buildCrewArray function here:
 
 
 let idNumbers = [291, 414, 503, 599, 796, 890];
+
+// console.log(selectRandomEntry(idNumbers));
+
+// let selectedCrew = [];
+// let repeatedCrew = [];
+
+// while(selectedCrew.length < 3){
+//   let i = 0;
+//     if (selectedCrew.includes(idNumbers[i])){
+//     repeatedCrew.push(selectRandomEntry(idNumbers))
+//   }else{
+//     selectedCrew.push(selectRandomEntry(idNumbers));
+//       i++
+//           }
+// };
+
+let chosenID = [];
+
+while (chosenID.length < 3) {
+
+  chosenForLaunch = selectRandomEntry(idNumbers);
+
+  if (!chosenID.includes(chosenForLaunch)) {
+
+    chosenID.push(chosenForLaunch);
+
+  }
+
+}
+
+console.log(chosenID);
+
+
 
 // Here are the candidates and the 'animals' array:
 let candidateA = {
@@ -55,3 +91,14 @@ let candidateF = {
 let animals = [candidateA,candidateB,candidateC,candidateD,candidateE,candidateF];
 
 // Code your template literal and console.log statements:
+
+function name(n){
+  for (i=0; i< chosenID.length; i ++){
+    let cadetName = [];
+    if (animals.includes(chosenID)){
+      
+    }
+  }
+}
+
+console.log(`${cadetName[0]}, ${cadetName[1]}, and ${cadetName[2]} are going to space!` )
