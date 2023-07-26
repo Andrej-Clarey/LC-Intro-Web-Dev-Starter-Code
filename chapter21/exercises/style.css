@@ -1,0 +1,22 @@
+
+      body{
+        background-color: yellow;
+      }
+      p{
+        color: green;
+      }
+      h1{
+        font-size: 36px;
+      }
+      h1{
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      #cool-text{
+        color: blue;
+      }
+      #list{
+        color: rgb(236, 9, 236);
+      }
